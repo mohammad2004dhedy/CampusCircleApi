@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\images\\04b745c944c84cdd8edb5b8dc29f5be3.png",
+      "PackagePath": "staticwebassets\\uploads\\posts\\images\\04b745c944c84cdd8edb5b8dc29f5be3.png"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\images\\210857cfc6ad4bbb9dfcef03e79fc2a5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\posts\\images\\210857cfc6ad4bbb9dfcef03e79fc2a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\images\\67eeb4cf64c441e99b2fb5aa725ffbc2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\posts\\images\\67eeb4cf64c441e99b2fb5aa725ffbc2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\images\\bc73d8f2e8804277b86c501780a09ecb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\posts\\images\\bc73d8f2e8804277b86c501780a09ecb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\videos\\0eefa9dc0ba742619e01d7d0773631b4.mp4",
+      "PackagePath": "staticwebassets\\uploads\\posts\\videos\\0eefa9dc0ba742619e01d7d0773631b4.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\videos\\b1ca89bf94f44642864f94fd824eb0d8.mp4",
+      "PackagePath": "staticwebassets\\uploads\\posts\\videos\\b1ca89bf94f44642864f94fd824eb0d8.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\posts\\videos\\ff6e11fdaf294cdf95ee5d28ba68bd88.mp4",
+      "PackagePath": "staticwebassets\\uploads\\posts\\videos\\ff6e11fdaf294cdf95ee5d28ba68bd88.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mhmdd\\Desktop\\4th year\\1st sem\\web 2\\project\\CampusCircle\\wwwroot\\uploads\\profile\\default-profile.jpg",
+      "PackagePath": "staticwebassets\\uploads\\profile\\default-profile.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CampusCircle.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CampusCircle.props",
+      "PackagePath": "build\\CampusCircle.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CampusCircle.props",
+      "PackagePath": "buildMultiTargeting\\CampusCircle.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CampusCircle.props",
+      "PackagePath": "buildTransitive\\CampusCircle.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

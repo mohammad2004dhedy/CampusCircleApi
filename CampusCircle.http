@@ -1,0 +1,6 @@
+@CampusCircle_HostAddress = http://localhost:5078
+
+GET {{CampusCircle_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
