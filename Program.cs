@@ -12,14 +12,16 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(
-                "http://localhost:5173",
-                "https://campuscircleaaup.netlify.app"
+        policy
+            .SetIsOriginAllowed(origin =>
+                origin == "http://localhost:5173" ||
+                origin == "https://campuscircleaaup.netlify.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
 });
+
 
 
 var app = builder.Build();
@@ -31,7 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-
+app.UseRouting();
 app.UseCors("AllowFrontend");
 
 app.MapControllers();
