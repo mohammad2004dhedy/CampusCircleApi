@@ -1,14 +1,18 @@
 using CampusCircleApi.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<CampusContext>(options=>
-options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+
+builder.Services.AddDbContext<CampusContext>(options =>
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+    )
 );
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
@@ -23,14 +27,13 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-
 var app = builder.Build();
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<CampusContext>();
-    db.Database.EnsureCreated();
-}
+
+// using (var scope = app.Services.CreateScope())
+// {
+//     var db = scope.ServiceProvider.GetRequiredService<CampusContext>();
+//     db.Database.EnsureCreated();
+// }
 
 if (app.Environment.IsDevelopment())
 {

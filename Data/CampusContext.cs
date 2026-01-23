@@ -16,6 +16,27 @@ namespace CampusCircleApi.Data
         {
             modelBuilder.Entity<PostLike>().HasKey(pl=>new {pl.PostId,pl.UserId});
 
+
+
+            
+            
+             modelBuilder.Entity<User>()
+                .Property(x => x.CreatedAt)
+                .HasColumnType("timestamptz");
+
+            modelBuilder.Entity<Post>()
+                .Property(x => x.CreatedAt)
+                .HasColumnType("timestamptz");
+
+            modelBuilder.Entity<Comment>()
+                .Property(x => x.CommentDate)
+                .HasColumnType("timestamptz"); 
+
+
+
+
+
+
             modelBuilder.Entity<User>()
             .HasIndex(u=>u.Email)
             .IsUnique();
